@@ -581,8 +581,8 @@
       width: 44px; height: 44px;
       border-radius: 12px;
       display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px;
       font-size: 20px;
+      margin: 0 auto 20px auto;
     }
     .step-icon-1 { background: rgba(79,142,247,0.12); }
     .step-icon-2 { background: rgba(123,94,167,0.12); }
