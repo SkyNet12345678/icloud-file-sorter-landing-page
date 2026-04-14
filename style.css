@@ -678,6 +678,12 @@
       transform: translateY(0);
     }
 
+    /* fallback: always visible if JS is disabled */
+    .reveal {
+    opacity: 1;
+    transform: none;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
