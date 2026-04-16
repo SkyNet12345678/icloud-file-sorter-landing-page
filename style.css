@@ -646,25 +646,24 @@
 
     /* ── FOOTER ── */
     footer {
+      display: flex;
+      flex-direction: column; 
+      gap: 8px;
       padding: 32px 48px;
       border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    }
+
+    @media (max-width: 900px) {
+        footer {
+            flex-direction: column;
+            gap: 16px;
+            text-align: left;
+        }
     }
 
     footer p {
       font-size: 0.85rem;
       color: var(--text-dim);
-    }
-
-    .footer-note {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      background: rgba(255,255,255,0.04);
-      padding: 6px 14px;
-      border-radius: 100px;
-      border: 1px solid var(--border);
     }
 
     /* ── SCROLL REVEAL ── */
@@ -680,8 +679,8 @@
 
     /* fallback: always visible if JS is disabled */
     .reveal {
-    opacity: 1;
-    transform: none;
+        opacity: 1;
+        transform: none;
     }
 
     /* ── RESPONSIVE ── */
